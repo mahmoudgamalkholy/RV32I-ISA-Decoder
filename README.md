@@ -69,12 +69,4 @@ To remove the generated executable files (`decoder` and `run_tests`) and start w
 ```bash
 make clean
 
-
-
-```bash
-git add README.md
-git commit -m "Fix markdown formatting for code blocks"
-git push origin main
-```
-
 ```
