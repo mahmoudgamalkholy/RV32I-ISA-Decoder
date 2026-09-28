@@ -1,0 +1,32 @@
+name: RISC-V Decoder CI
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y build-essential libgtest-dev python3-pip
+        pip3 install lit filecheck --break-system-packages
+
+    - name: Build stage
+      run: make all
+
+    - name: Unit Tests (gtest) stage
+      run: |
+        make test
+        ./run_tests
+
+    - name: Regression Tests (LIT) stage
+      run: make test_lit
