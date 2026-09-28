@@ -6,6 +6,8 @@ This file contains the basic commands for generating test files, compiling the p
 ## 1. Generating ELF and Assembly Files (Preparation)
 To test the decoder, you first need an ELF file. You can create files compatible with the RV32I architecture from C/C++ code using the RISC-V GNU Toolchain.
 
+
+
 **A. To convert C/C++ code into an executable ELF file (`.elf`):**
 ```bash
 riscv64-unknown-elf-g++ -march=rv32i -mabi=ilp32 source_code.cpp -o test.elf
