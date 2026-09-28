@@ -20,7 +20,6 @@ After building the program, you can use it to decode any `.elf` file and print t
 
 ```
 
-*(Replace `./test.elf` with the actual path and name of the file you want to decode).*
 
 ## 3. Running Tests
 
