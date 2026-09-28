@@ -10,6 +10,7 @@ To test the decoder, you first need an ELF file. You can create files compatible
 **A. To convert C/C++ code into an executable ELF file (`.elf`):**
 
 ```bash
+
 riscv64-unknown-elf-g++ -march=rv32i -mabi=ilp32 source_code.cpp -o test.elf
 
 ```
