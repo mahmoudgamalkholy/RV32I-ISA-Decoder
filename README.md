@@ -1,4 +1,3 @@
-```markdown
 # RV32I ISA Decoder: Quick Reference Guide
 
 This file contains the basic commands for generating test files, compiling the project, running the decoder, and executing tests. It follows the natural workflow of the project.
@@ -70,14 +69,12 @@ To remove the generated executable files (`decoder` and `run_tests`) and start w
 ```bash
 make clean
 
-```
-
-```
 
 
 ```bash
 git add README.md
 git commit -m "Fix markdown formatting for code blocks"
 git push origin main
+```
 
 ```
