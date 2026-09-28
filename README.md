@@ -5,6 +5,7 @@ This file contains the basic commands for compiling, running, and testing the pr
 
 ## 1. Compiling the Decoder
 To compile the core code (`decoder.cpp` and `instruction.hpp`) and generate the `decoder` executable, run the following command in the terminal:
+
 ```bash
 make
 
