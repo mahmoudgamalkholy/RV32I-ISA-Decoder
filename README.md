@@ -4,9 +4,8 @@
 This file contains the basic commands for generating test files, compiling the project, running the decoder, and executing tests. It follows the natural workflow of the project.
 
 ## 1. Generating ELF and Assembly Files (Preparation)
+
 To test the decoder, you first need an ELF file. You can create files compatible with the RV32I architecture from C/C++ code using the RISC-V GNU Toolchain.
-
-
 
 **A. To convert C/C++ code into an executable ELF file (`.elf`):**
 
@@ -72,4 +71,12 @@ make clean
 
 ```
 
+```
 
+
+```bash
+git add README.md
+git commit -m "Fix markdown formatting for code blocks"
+git push origin main
+
+```
