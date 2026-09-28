@@ -1,7 +1,5 @@
-# تشغيل البرنامج وتمرير المخرجات إلى أداة التحقق
 # RUN: %decoder ../test.elf | filecheck %s
 
-# التحقق من أن السطور التالية تظهر في المخرجات بنفس الترتيب
 # CHECK: Successfully loaded .text section.
 # CHECK: 0x10094 | 0xfe010113 | ADDI  sp, sp, -32
 # CHECK: 0x10098 | 0x00112e23 | SW  ra, 28(sp)
